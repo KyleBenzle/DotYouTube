@@ -32,7 +32,5 @@ chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
         
             url.hostname = url.hostname + ".";
             chrome.tabs.update(tabId, { url: url.href });
-        }
-    }
-})
+        }}})
 
