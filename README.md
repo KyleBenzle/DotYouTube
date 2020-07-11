@@ -22,15 +22,14 @@ To run/try on your PC:
 7. Now see it working
 
 
+    chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 
-chrome.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-
-    if (changeInfo.status === "loading" && /youtube.com/.test(changeInfo.url)) {
+        if (changeInfo.status === "loading" && /youtube.com/.test(changeInfo.url)) {
     
-        let url = new URL(tab.url);
-        if (!url.hostname.endsWith(".")) {
+            let url = new URL(tab.url);
+            if (!url.hostname.endsWith(".")) {
         
-            url.hostname = url.hostname + ".";
-            chrome.tabs.update(tabId, { url: url.href });
+                url.hostname = url.hostname + ".";
+                chrome.tabs.update(tabId, { url: url.href });
         }}})
 
