@@ -1,15 +1,12 @@
 # DotYouTube
 A Tiny Extension to Block (Some) YouTube Pre-Roll Video Ads
 
-// DotYouTube
 
-// https://github.com/KyleBenzle/DotYouTube
 
-// Created by Kyle Benzle 2020
-
-// KyleBenzle.com
-
-// kbe@mm.st
+https://github.com/KyleBenzle/DotYouTube
+Created by Kyle Benzle 2020
+KyleBenzle.com
+kbe@mm.st
 
 
 //Block some pre-roll YouTube video ads by appending a dot after youtube.com
